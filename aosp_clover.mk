@@ -25,6 +25,8 @@
 $(call inherit-product, device/xiaomi/clover/device.mk)
 
 # Inherit from Pixel Experience custom product configuration
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
 $(call inherit-product, vendor/aosp/config/common_full_tablet_wifionly.mk)
 
 # Device identifier
@@ -34,4 +36,4 @@ PRODUCT_PLATFORM := SDM660
 PRODUCT_NAME := aosp_clover
 PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_DEVICE := clover
-PRODUCT_MODEL := MI PAD 4
+PRODUCT_MODEL := Mi Pad 4
