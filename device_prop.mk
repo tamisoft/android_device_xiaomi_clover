@@ -76,3 +76,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Ultra Sound
 PRODUCT_PROPERTY_OVERRIDES += \
 	audio.chk.cal.us=0
+
+# Multi User
+PRODUCT_PROPERTY_OVERRIDES += \
+        fw.max_users=5 \
+        fw.show_multiuserui=1
