@@ -21,7 +21,7 @@
 # definition file).
 #
 
-# Set Boot Animination Resolution
+# Set Boot Animation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from those products. Most specific first.
