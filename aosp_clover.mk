@@ -21,13 +21,19 @@
 # definition file).
 #
 
+# Set Boot Animination Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/clover/device.mk)
 
 # Inherit from Pixel Experience custom product configuration
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
 $(call inherit-product, vendor/aosp/config/common_full_tablet_wifionly.mk)
+TARGET_GAPPS_ARCH := arm64
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
